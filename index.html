@@ -1,0 +1,468 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html lang="en">
+	<head>
+		<title>Analytics in Management</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	
+		
+
+
+		<style>
+			html, body {
+			   height: 100%;
+			   margin: 0;
+			   padding: 0;
+			   box-sizing: border-box;
+			}
+		 
+			#wrapper {
+			   display: flex;
+			   flex-direction: column;
+			   min-height: 100vh;
+			}
+		 
+			/*footer {
+			   text-align: center;
+			   background-color: #ffdce5;
+			   padding: 20px;
+			   /*margin-top: auto;
+			}*/
+		 
+			#main {
+			   flex: 1;
+			   overflow: auto;
+			   z-index: 1;
+			   padding-bottom: 20px; /* Adjust as needed to prevent content from going under the footer */
+			}
+
+			footer {
+				text-align: center;
+				background-color: #ffdce5;
+				padding: 20px;
+				margin-top: auto; 
+			 }
+		 
+			.contact-container {
+			   display: flex;
+			   justify-content: center;
+			   align-items: center;
+			   flex-wrap: wrap;
+			}
+		 
+			.contact-info,
+			.icons {
+			   min-height: 82px;
+			   margin: 10px;
+			   text-align: center;
+			}
+		 
+			.icons {
+			   list-style: none;
+			   padding: 0;
+			   display: flex;
+			   justify-content: center;
+			   align-items: center;
+			   margin-top: -20px; /* Add a margin to adjust the spacing between text and icons */
+
+			}
+		 
+			.icons li {
+			   margin: 0 10px;
+			}
+
+
+			#profile-image {
+				width: 1000px; /* Adjust the width as needed */
+				height: 600px;
+				border-radius: 0%; /* Make it a circular image */
+				margin: 20px 500px 20px 225px; 
+
+			}
+
+			
+			#navbar {
+				position: fixed;
+				top: 0;
+				right: 0;
+				height: 100vh;
+				width: 130px;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				background-color: #333;
+				padding: 10px;
+				z-index: 1000;
+				transition: width 0.3s ease; /* Added transition for smoother animation */
+
+			  }
+			  
+			  #navbar a {
+				color: white;
+				text-decoration: none;
+				margin: 10px 0;
+				font-size: 18px;
+				cursor: pointer;
+			  }
+
+			  .collapsed #navbar {
+				width: 0;
+			}
+		
+			.collapsed #main {
+				margin-right: 0;
+			}
+
+			.special-lines {
+				line-height: 1; /* Adjust the value as needed */
+			}
+
+			.interest-card img.small-image {
+				width: 250px; /* Adjust the width as needed */
+				height: 250px; /* Adjust the height as needed */
+				border-radius: 0%; /* Optional: Makes the image circular */
+				object-fit: cover; /* Maintains the aspect ratio while covering the specified dimensions */
+			}
+
+			.interest-card .card-content {
+				display: flex;
+				align-items: center;
+			}
+			
+			.interest-card img.small-image {
+				margin-right: 20px; /* Adjust the margin as needed */
+			}
+			
+			.interest-card .description {
+				flex: 1;
+			}
+
+			.interest-card {
+				margin-bottom: 50px; /* Adjust the margin as needed */
+			}
+
+			.with-line::after {
+				content: "";
+				display: block;
+				width: 50%;
+				height: 2px;
+				background-color: #D2B48C; /* Light brown color */
+				margin: 10px auto; /* Adjust the margin as needed */
+			}
+		 </style>
+
+		 <script>
+			function toggleNavbar() {
+				document.body.classList.toggle("collapsed");
+			}
+
+			function scrollToSection(sectionId) {
+				var section = document.getElementById(sectionId);
+				if (section) {
+					section.scrollIntoView({ behavior: 'smooth' });
+				}
+				toggleNavbar(); // Close the navbar when clicking on a section
+			}
+
+		</script>
+		
+
+
+
+	</head>
+
+		 <body class="is-preload">
+			<div id="wrapper" class="fade-in">
+				<img id="profile-image" src="images/YY.png" alt="Nadeem AKhter" />
+
+				<div id="navbar">
+					<a onclick="scrollToSection('intro')">About Me</a>
+<a onclick="scrollToSection('main')">Projects</a>
+<a onclick="scrollToSection('resume')">Resume</a>
+<a onclick="scrollToSection('blog')">Blog</a>					
+<a onclick="scrollToSection('interests')">Interests</a>
+<a onclick="scrollToSection('contact')">Contact</a>
+				</div>
+
+				<script>
+					function scrollToSection(sectionId) {
+						var section = document.getElementById(sectionId);
+						if (section) {
+							section.scrollIntoView({ behavior: 'smooth' });
+						}
+					}
+				</script>
+			
+
+			    
+				<!-- About Me -->
+				<div id="intro">
+					<!-- Replace 'your-image.jpg' with the actual image source -->
+					<h1>ABOUT ME</h1>
+					<style>
+						p {
+							white-space: pre-line; /* or white-space: nowrap; depending on your preference */
+						}
+					</style>
+					
+					<p>
+						I am Nadeem Akhter, an experienced business analyst with approximately 2 years of experience in data analytics and insights,
+						complemented by formal education in business analytics from Ivey Business School. Proficient in analytics tools 
+						such as PowerBI, R, Python, and SQL. Eager to engage and collaborate on challenging projects across diverse domains,
+						bringing a wealth of analytical expertise and a commitment to driving impactful results through data-driven strategies.
+					</p>
+
+				</div>
+
+
+
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="fade-in">
+
+				<!-- Intro -->
+					<div id="intro">
+						<h1><strong>MISSION: Deciphering </strong><br />
+							<strong>Insights for Decisions</strong><br />
+						</h1>
+						<p class="special-lines">
+							Explore my projects involving data cleaning, data exploration, data analysis, modelling, and dashboarding in areas such as</a><br />
+							business performance indicators, social impact analysis, and sports analytics using tools like SQL, Python, PowerBI, and R</a><br />
+						<ul class="actions">
+							<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+						</ul>
+					</div>
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo">Insightful Analytics</a>
+					</header>
+
+				<!-- Nav -->
+					<nav id="nav">
+						<ul class="links">
+							<li class="active"><a href="index.html">Projects</a></li>
+
+						</ul>
+						<ul class="icons">
+							<li><a href="https://www.linkedin.com/in/nadeemakhter1/" target="_blank" class="icon brands alt fa-linkedin"><span class="label">Linkedin</span></a></li>
+							<li><a href="https://github.com/Nadeem-Akhter1" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Featured Post -->
+							<article class="post featured">
+								<header class="major">
+									<h2><a href="https://github.com/Nadeem-Akhter1/Youtube_Statistics" target="_blank">Data Cleaning and Manipulation Using SQL<br />
+									</a></h2>
+									<p class="special-lines">In this project, raw YouTube statistics data was transformed in SQL Server to derive insights</a><br />
+										and understand key factors influencing viewership trends.</p>
+								</header>
+								<a href="https://github.com/Nadeem-Akhter1/Youtube_Statistics" target="_blank" class="image main"><img src="images/Youtube.jpg" alt="" /></a>
+								<ul class="actions special">
+									<li><a href="https://github.com/Nadeem-Akhter1/Youtube_Statistics" target="_blank" class="button large">View Project</a></li>
+								</ul>
+							</article>
+
+						<!-- Posts -->
+							<section class="posts">
+								<article>
+									<header>
+										<h2><a href="https://github.com/Nadeem-Akhter1/Factors-Influencing-Flu-Vacination" target="_blank">Global Flu Vaccination <br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/Nadeem-Akhter1/Factors-Influencing-Flu-Vacination" target="_blank" class="image fit"><img src="images/Flu.jpg" alt="" /></a>
+									<p>Utilized R to analyze and predict determinants impacting Flu vaccination adoption, for a comprehensive understanding of key factors influencing uptake.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Nadeem-Akhter1/Factors-Influencing-Flu-Vacination" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="https://github.com/Nadeem-Akhter1/Co2-Emission-Dashboard" target="_blank">ESG SCORING BY COUNTRY<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/Nadeem-Akhter1/Co2-Emission-Dashboard" target="_blank" class="image fit"><img src="images/ESG.jpg" alt="" /></a>
+									<p>Developed, analyzed and visualized ESG scores for different countries based on their CO2 emissions, population, GDP, and other factors.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Nadeem-Akhter1/Co2-Emission-Dashboard" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="https://github.com/Nadeem-Akhter1/Spotify_PowerBI_Dashboard" target="_blank">SPOTIFY DASHBOARD<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/Nadeem-Akhter1/Spotify_PowerBI_Dashboard" target="_blank" class="image fit"><img src="images/SPOTIFY.jpg" alt="" /></a>
+									<p>Created a dynamic PowerBI dashboard examining Spotify tracks and streaming patterns, providing an engaging visual representation of music insights and trends.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Nadeem-Akhter1/Spotify_PowerBI_Dashboard" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+								<article>
+									<header>
+										<h2><a href="https://github.com/Nadeem-Akhter1/Indian-Premier-League-Analysis" target="_blank">IPL Analysis<br />
+										</a></h2>
+									</header>
+									<a href="https://github.com/Nadeem-Akhter1/Indian-Premier-League-Analysis" target="_blank" class="image fit"><img src="images/IPL.jpg" alt="" /></a>
+									<p>Designed an Excel dashboard for IPL teams, offering actionable insights crucial for informed decisions, performance analysis, and strategic planning.</p>
+									<ul class="actions special">
+										<li><a href="https://github.com/Nadeem-Akhter1/Indian-Premier-League-Analysis" target="_blank" class="button">View Project</a></li>
+									</ul>
+								</article>
+							</section>	
+
+
+							<!-- Resume Section -->
+							<section id="resume">
+								<h2>Resume</h2>
+								<img src="images/CV.jpg" alt="Resume Image" style="width: 100%; height: auto;">
+							</section>
+							
+
+
+							<section id="blog">
+    <h2>Blog</h2>
+
+    <!-- Blog Post 1 -->
+    <article class="post">
+        <header>
+            <h3>Analytics 2.0: A New Era in Marketing Strategy</h3>
+        </header>
+        <p>
+		In the dynamic landscape of digital marketing, Analytics 2.0 is emerging as a game-changer, ushering in a new era of precision and efficiency. This advanced analytics approach goes beyond traditional methods, incorporating attribution, optimization, and allocation to provide marketers with unparalleled insights.
+
+Attribution, the first pillar of Analytics 2.0, unravels the intricacies of consumer behavior by dissecting the impact of various marketing channels on sales. It eliminates guesswork, enabling marketers to accurately credit revenue to the most influential touchpoints. The document emphasizes how attribution can expose discrepancies, ensuring a more accurate representation of a company's financial success.
+
+Optimization, the second pillar, takes data analysis to the next level. By employing predictive analytics tools, businesses can run scenarios and fine-tune their marketing strategies. This step enables marketers to understand the complex interplay of variables, from advertising to external factors, guiding smarter spending decisions.
+
+Allocation, the final pillar, transforms strategic planning by recommending the optimal distribution of resources across diverse channels. Reallocation recommendations, as highlighted in the document, can lead to increased revenue without expanding the budget, demonstrating the power of data-driven decision-making.
+
+In conclusion, Analytics 2.0 is reshaping the marketing landscape, empowering businesses to make informed, strategic choices. As organizations embrace this comprehensive analytics approach, they gain a competitive edge, ensuring they are not only keeping pace but leading the charge in the ever-evolving world of digital marketing.
+
+        </p>
+        
+    </article>
+</section>
+
+
+<!-- Interests Section -->
+<section id="interests">
+    <h2>Interests</h2>
+    
+    <!-- Interest Cards -->
+    <div class="interest-cards">
+        <!-- Interest Card 1 -->
+        <div class="interest-card">
+            <div class="card-content">
+                <img src="images/TT.jpg" alt="Table Tennis" class="small-image">
+                <div class="description">
+                    <h3>Table Tennis</h3>
+                    <p>Unleashing my inner ninja on the table, chasing the elusive ping pong ball with lightning-fast reflexes and killer spin moves!</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interest Card 2 -->
+        <div class="interest-card">
+            <div class="card-content">
+                <img src="images/MN.jpg" alt="Thriller Novels" class="small-image">
+                <div class="description">
+                    <h3>Reading Thriller Novels</h3>
+                    <p>Embarking on thrilling literary adventures, diving into mysterious plots that keep me on the edge of my seat, and solving mysteries before the last page.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Interest Card 3 -->
+        <div class="interest-card">
+            <div class="card-content">
+                <img src="images/CK.jpg" alt="Cooking" class="small-image">
+                <div class="description">
+                    <h3>Cooking</h3>
+                    <p>Transforming the kitchen into my culinary playground, where every dish is a delicious experiment and every spice is a secret ingredient to success!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+							<footer id="contact">
+									<section class="contact-container">
+										<section class="contact-info">
+											<h3>Location</h3>
+											<p>London, ON, N6G 2C3</p>
+										</section>
+										<section class="contact-info">
+											<h3>Phone</h3>
+											<p><a href="#">(437) 733-1016</a></p>
+										</section>
+										<section class="contact-info">
+											<h3>Email</h3>
+											<p><a href="#">nakhter.msc2024@ivey.ca</a></p>
+										</section>
+										<section class="contact-info">
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://www.linkedin.com/in/nadeemakhter1/" target="_blank" class="icon brands fa-linkedin"><span class="label">Linkedin</span></a></li>
+												<li><a href="https://github.com/Nadeem-Akhter1" target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+											</ul>
+										</section>
+									</section>
+								</footer>
+										
+								
+
+							<!--	<section>
+									<h2>About Me</h2>
+									<p>
+										A seasoned business analyst with approximately 2 years of experience in data analytics and insights, complemented by formal education in business analytics from Ivey Business School. 
+										Proficient in analytics tools such as PowerBI, R, Python, and SQL.  
+										Eager to engage and collaborate on challenging projects across diverse domains, bringing a wealth of analytical expertise and a commitment to driving impactful results through data-driven strategies.
+									</p>
+								
+								</section>
+							</footer>
+						-->
+
+
+				
+				
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
